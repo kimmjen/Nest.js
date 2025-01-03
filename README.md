@@ -1,6 +1,16 @@
+# **Next.js 프로젝트**
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
+
+Nest.js는 Node.js를 기반으로 한 진보된 백엔드 프레임워크로, TypeScript를 기본으로 사용하며, 모듈 기반 구조와 강력한 의존성 주입 컨테이너를 통해 대규모 애플리케이션 개발에 최적화되어 있습니다.
+
+## **Project 설정**
+
+### Node version 22
+
+
 
 ## **주요 특징**
 
@@ -19,6 +29,26 @@
    - 다양한 프로토콜과 기술을 지원하여 유연한 백엔드 개발이 가능
 7. 테스트 용이성
    - 유닛 테스트와 통합 테스트를 쉽게 작성할 수 있는 환경을 제공
+
+## **프로젝트 구조**
+```markdown
+src/
+├── common/                # 공통 기능 (유틸리티, 필터, 가드 등)
+│   ├── database/          # 데이터베이스 설정 (TypeORM)
+│   │   ├── database.module.ts
+│   │   └── typeorm.config.ts
+├── modules/               # 주요 비즈니스 로직 모듈
+│   ├── users/             # 사용자 관리 모듈
+│   │   ├── dto/
+│   │   ├── entities/
+│   │   ├── users.controller.ts
+│   │   ├── users.service.ts
+│   │   ├── users.module.ts
+├── app.module.ts          # 루트 모듈
+├── main.ts                # 애플리케이션 진입점
+test/                      # 테스트 코드
+```
+
 
 ## **사용 사례**
 - REST API: 전통적인 RESTful API 서버 구축
