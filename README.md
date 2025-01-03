@@ -8,7 +8,7 @@ Nest.js는 Node.js를 기반으로 한 진보된 백엔드 프레임워크로, T
 
 ## **Project 설정**
 
-### Node version 22
+### Node Version 22
 
 
 
